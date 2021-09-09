@@ -1,0 +1,11 @@
+nav:
+  - Home: index.md
+  - Documentation:
+    - Getting Started: documentation/getting-started.md
+    - User Guide:
+      - User Guide: documentation/user-guide.md
+      - Running Your Jobs: documentation/user-guide/running-your-jobs.md
+
+site_name: Blue Waters Documentation
+site_description: Blue Waters Documentation
+site_author: NCSA

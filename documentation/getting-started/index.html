@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="NCSA">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Getting Started - Blue Waters Documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Blue Waters Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Getting Started</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">User Guide</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../user-guide/" class="dropdown-item">User Guide</a>
+</li>
+            
+<li>
+    <a href="../user-guide/running-your-jobs/" class="dropdown-item">Running Your Jobs</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../.." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../user-guide/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#getting-started-guide" class="nav-link">Getting Started Guide</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#contents" class="nav-link">Contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="getting-started-guide">Getting Started Guide</h1>
+<p>This brief guide is intended to give fairly experienced users the basic
+information they need to get on the system, set up their environment,
+compile applications, and run batch jobs.</p>
+<p>A <a href="https://bluewaters.ncsa.illinois.edu/new-user-webinar">New User
+Webinar</a> is also
+available for playback of video recordings.</p>
+<h2 id="contents">Contents</h2>
+<p><a href="https://bluewaters.ncsa.illinois.edu/getting-started/#Allocation">Obtaining an
+Allocation</a></p>
+<p><a href="https://bluewaters.ncsa.illinois.edu/getting-started/#Logging">Logging
+In</a></p>
+<p><a href="https://bluewaters.ncsa.illinois.edu/getting-started/#Expertise">Level of Expertise Expected of Blue Waters
+Users</a></p>
+<p><a href="https://bluewaters.ncsa.illinois.edu/getting-started/#Transfer">Transfering Files and
+Data</a></p>
+<p><a href="https://bluewaters.ncsa.illinois.edu/getting-started/#Environment">Setting Up Your
+Environment</a></p>
+<p><a href="https://bluewaters.ncsa.illinois.edu/getting-started/#Building">Building
+Executables</a></p>
+<p><a href="https://bluewaters.ncsa.illinois.edu/getting-started/#Running">Running Batch
+Jobs</a></p>
+<p><a href="https://bluewaters.ncsa.illinois.edu/getting-started/#QuickHardwareSummary">Quick Hardware
+Summary</a></p>
+<h3 id="allocationobtaining-an-allocation">[]{#Allocation}Obtaining an Allocation</h3>
+<p>There are several pathways available for researchers and educators to
+apply to use Blue Waters for their work. Visit the <a href="https://bluewaters.ncsa.illinois.edu/aboutallocations">Allocations
+page</a>.</p>
+<h3 id="logging-duologging-in-duologging-in">[]{#Logging-duo}[]{#logging-in-duo}Logging In</h3>
+<p>You may connect to Blue Waters via the external login hosts at
+<strong>bw.ncsa.illinois.edu</strong> using ssh with your NCSA DUO passcode or push
+response from your smartphone. This multi-factor authenication scheme
+provides significant security benefits. The bw.ncsa.illinois.edu address
+is a DNS roundrobin alias for h2ologin[1-4]. If you find that
+connecting to bw.ncsa.illinois.edu is not successful please try
+specifying a particular login host.</p>
+<p>For help activating your NCSA Duo account, reference <a href="https://wiki.ncsa.illinois.edu/display/cybersec/Duo+at+NCSA">this
+page</a>.</p>
+<p>To check if your NCSA Duo is working proplerly,
+visit <a href="https://duo.security.ncsa.illinois.edu/portal">here</a>. Depending
+on the choice you make there, you should receive a pass code or a push
+from Duo.</p>
+<p>Myproxy login and GSI enabled ssh are not supported with NCSA Duo
+authentication.</p>
+<h3 id="expertiselevel-of-expertise-expected-for-blue-waters-users">[]{#Expertise}Level of Expertise Expected for Blue Waters Users</h3>
+<p>Most users of systems like Blue Waters have experience with other large
+high-performance computer systems.  The instructions on this portal
+generally assume that the reader knows how to use a Unix-style command
+line, edit files, run (and modify) Makefiles to build code, write
+scripts, and submit jobs to a batch queue system.  There <em>are</em> some
+things that work slightly differently on the Cray XE system than other
+systems; the portal documentation covers those in detail, but we assume
+that you know the basics already.</p>
+<p>If you\'re not at that level yet (if you\'re unfamiliar with things like
+ssh, emacs, vi, jpico, qsub, make, top) then you\'ll need to gain some
+knowledge before you can use Blue Waters effectively.  Here are a few
+links to resources that will teach you some of the basics about Unix
+command line tools and working on a high-performance computing system:</p>
+<ul>
+<li><a href="https://www.xsede.org/web/xup/online-training">https://www.xsede.org/web/xup/online-training</a></li>
+<li><a href="https://newton.utk.edu/bin/view/Main/LinuxCommandLineBasics">https://newton.utk.edu/bin/view/Main/LinuxCommandLineBasics</a></li>
+<li><a href="http://websistent.com/linux-acl-tutorial/">http://websistent.com/linux-acl-tutorial/</a>  # explains linux
+    Access Control Lists (ACL) compared with chmod</li>
+</ul>
+<h3 id="transfertransfering-files-and-data">[]{#Transfer}Transfering Files and Data</h3>
+<p>It is recommended that Globus Online (GO) is used for file transfers to
+and from Blue Waters. Blue Waters has dedicated import/export resources
+to provide superior I/O access to the filesystems. Most HPC centers
+provide GO endpoints and GO provides clients for desktop and laptop
+transfers.</p>
+<p>Please see the <a href="https://bluewaters.ncsa.illinois.edu/data-transfer-doc">Data
+Transfer</a>
+section of the <a href="/user-guide">User Guide</a>.</p>
+<h3 id="environmentsetting-up-your-environment">[]{#Environment}Setting Up Your Environment</h3>
+<p>The default shell is /bin/bash.  You can change it by sending a request
+via email to help+bw\@ncsa.illinois.edu.</p>
+<p>The user environment is controlled using the modules environment
+management system. Modules may be loaded, unloaded, or swapped either on
+a command line or in your \$HOME/.bashrc (.cshrc for csh ) shell startup
+file.</p>
+<p>The command \"module avail\" will display the avail modules on the
+system.</p>
+<p>Please see the <a href="https://bluewaters.ncsa.illinois.edu/programming">Programming
+Environment</a> section
+of the User Guide.</p>
+<h3 id="home_directoryhome-directory-permissions">[]{#Home_Directory}Home Directory Permissions</h3>
+<p>By default, user home directories and /scratch directories are
+closed (permissions 700) with a parent directory setting that prevents
+users from opening up the permissions. See the File and Directory Access
+Control List  page (<a href="https://bluewaters.ncsa.illinois.edu/facl">https://bluewaters.ncsa.illinois.edu/facl</a>) for
+Blue Waters file system policies.  The /projects file system is designed
+as common space for your group; if you want a space that all your group
+members can access, that\'s a good place for it.  As always, your space
+on the /scratch file system is the best place for job inputs and
+outputs.</p>
+<h3 id="buildingbuilding-executables">[]{#Building}Building Executables</h3>
+<p>The compilers are defined in the PrgEnv module for each family of
+compilers.  Invoke the ftn, cc, or CC (Fortran, C, or C++, respectively)
+commands after loading the appropriate programming environment, and the
+underlying compilers will be employed.  To see the options specific to a
+compiler (pgi vs. cray) consult the man pages for the vendor\'s compiler
+(man pgf90 or man crayftn).  The correct xt-libsci providing the lapack
+and other libs for your programming environment is automatically
+included in the PrgEnv module you choose.</p>
+<p>The default programming environment (module PrgEnv-cray ) invokes the
+Cray compilers. PGI compilers are available via the PrgEnv-pgi
+module.Intel compilers are available via the PrgEnv-intel module. Gnu
+compilers are available via the PrgEnv-gnu module.</p>
+<p>OpenACC support is provided by both the Cray and PGI compilers.</p>
+<p>Please see the
+<a href="https://bluewaters.ncsa.illinois.edu/compiling">Compiling</a> section of
+the User Guide for more information.</p>
+<h3 id="runningrunning-batch-jobs">[]{#Running}Running Batch Jobs</h3>
+<p>The batch environment is Torque/MOAB from Adaptive Computing which talk
+to the Cray\'s Application Level Placement Scheduler (ALPS) to obtain
+resource information.</p>
+<p>The aprun utility is used to start jobs on compute nodes. Its closest
+analogs are mpirun or mpiexec as found on many commodity clusters.
+Unlike clusters, the use of aprun is mandatory on Blue Waters, which is
+not a Linux cluster but a massively parallel system (MPP), in order to
+start any jobs including non-MPI ones that run on a single node. If the
+PBS script does not use aprun to start the application the latter will
+start on a service node, which is a shared resource, and that will be a
+violation of the usage policy. If by any reason the single-node job does
+not properly run when invoked with help of aprun, the alternative is to
+run the single-node application in
+<a href="https://bluewaters.ncsa.illinois.edu/cluster-compatibility-mode">CCM-mode</a>.</p>
+<p>aprun supports options that are unique to the Cray.  There are flags to
+set process affinity by NUMA node, control thread placement, and set
+memory policy between NUMA nodes in a job.  See the aprun man page for
+more details.  Some common flags are highlighted and documented in the
+sample batch scripts.</p>
+<p>Example scripts are located in /sw/userdoc/samplescripts/</p>
+<p>Following is a minimalistic PBS script to start a job app.exe running
+under GNU environment on two XE nodes</p>
+<pre><code>#!/bin/bash
+#PBS -l nodes=2:ppn=32
+#PBS -l walltime=00:30:00
+#PBS -N testjob
+
+. /opt/modules/default/init/bash
+module swap PrgEnv-cray PrgEnv-gnu
+
+cd $PBS_O_WORKDIR
+
+aprun -n 64 ./app.exe &lt; input.dat &gt; output.out
+</code></pre>
+<p>Once you have prepared a job script (called jobscript.pbs for example),
+you then use the qsub command to submit the job to the resource handling
+and job scheduling system.</p>
+<p><code>$ qsub jobscript.pbs</code></p>
+<p>The job is now in the queue (normal queue in this case as it was not
+specified).</p>
+<p>Please see the <a href="https://bluewaters.ncsa.illinois.edu/running-your-jobs">Running Your
+Jobs</a> section of
+the User Guide for more information.</p>
+<h3 id="quickhardwaresummaryquick-hardware-summary">[]{#QuickHardwareSummary}Quick Hardware Summary</h3>
+<p>The Blue Waters system is a Cray XE/XK hybrid machine composed of AMD
+6276 \"Interlagos\" processors and NVIDIA GK110 \"Kepler\" accelerators
+all connected by the Cray Gemini torus interconnect. </p>
+<h4 id="system-totals">System Totals</h4>
+<hr />
+<p><strong>Cabinets</strong>                       <strong>288</strong>
+  <strong>Peak Performance</strong> <strong>(XE+XK)</strong>   <strong>13.24 PF</strong>
+  <strong>System Memory</strong> <strong>(XE+XK)</strong>      <strong>1.476 PB</strong>
+  <strong>Compute Nodes (XE+XK)</strong>          <strong>26,864</strong>
+  <strong>Bulldozer Cores (XE+XK)</strong>        <strong>405,248</strong>
+  <strong>Kepler Accelerators</strong>            <strong>4,228</strong>
+  <strong>Torus Dimensions</strong>               <strong>24x24x24</strong>
+  <strong>Usable Disk Storage</strong>            <strong>26.4 PB</strong></p>
+<hr />
+<h4 id="_1"></h4>
+<p>Please see the detailed <a href="https://bluewaters.ncsa.illinois.edu/hardware-summary">Hardware
+Summary</a> page for
+more information.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
